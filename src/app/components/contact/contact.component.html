@@ -1,0 +1,42 @@
+<div class='container-fluid'>
+  <br />
+  <form [formGroup]="contactForm">
+    <mat-card class="col-4 mat-elevation-z3">
+      <mat-card-header>
+        <h3 class="titleContact">Envíanos tu mensaje</h3>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="col-12">
+          <mat-form-field>
+            <input matInput placeholder="Nombres y Apellidos" formControlName="Name" autocomplete="off">
+            <mat-error *ngIf="contactForm.get('Name').invalid">
+              {{getErrorMessage("Name")}}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-12">
+          <mat-form-field>
+            <input matInput placeholder="Correo Electrónico" formControlName="Email" autocomplete="off">
+            <mat-error *ngIf="contactForm.get('Email').invalid">
+              {{getErrorMessage("Email")}}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-12">
+          <mat-form-field>
+            <textarea class="message" matInput #message maxlength="256" placeholder="Mensaje" formControlName="Message"
+              autocomplete="off"></textarea>
+            <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+            <mat-error *ngIf="contactForm.get('Message').invalid">
+              {{getErrorMessage("Message")}}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-12">
+          <button class="btn" mat-button (click)="sendMessage()">Enviar <mat-icon>send</mat-icon></button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>
+  <br />
+</div>

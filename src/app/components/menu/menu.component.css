@@ -1,0 +1,258 @@
+mat-toolbar{
+background-color: #fff;
+height: auto;
+padding-left: 0;
+padding-right: 0;
+}
+.mat-list-item{
+border-bottom: 1px dotted #bdbbbb;
+overflow: hidden;
+}
+.logo{
+width: 77%;
+height: 100%;
+}
+.box {
+display: flex;
+height: auto;
+}
+.one {
+flex: 1;
+text-align: center;
+}
+.two {
+flex: 1.8;
+text-align: left;
+}
+.three {
+flex: 1;
+text-align: center;
+}
+.place{
+position: relative;
+font-size: 50px;
+top: 19px;
+color: #083e94;
+}
+.address{
+position: relative;
+color: #333;
+font-size: 18px;
+font-weight: 500;
+}
+.addressNumber{
+position: relative;
+top: 15px;
+right: 76px;
+font: 300 14px/24px "Ubuntu",sans-serif;
+color: #777;
+}
+.subMenu{
+white-space: nowrap;
+list-style: none inside;
+padding: 2px;
+text-align: left !important;
+display: inline-grid;
+width: 100%;
+overflow: hidden;
+}
+.whatsapp{
+position: relative;
+top: 30px;
+width: 12%;
+}
+.whatsappTitle{
+position: relative;
+color: #333;
+font-size: 18px;
+font-weight: 500;
+top: 28px;
+left: 7px;
+}
+.whatsappNumber{
+position: relative;
+top: 46px;
+right: 76px;
+font: 300 14px/24px "Ubuntu",sans-serif;
+color: #777;
+}
+.menu{
+bottom: 0px;
+top: 4px;
+right: 87%;
+color: #083e94;
+font-size: 40px;
+position: relative;
+}
+::ng-deep .mat-menu-panel{
+background: #fff !important;
+width: 127px !important;
+min-width: 210px !important;
+max-height: 100% !important;
+}
+.itemSub{
+text-align: start !important;
+}
+.mat-button:hover{
+background-color: #fff;
+}
+.itemMenu, .itemSub{
+color: #083e94;
+background-color: #fff;
+/* margin-right: 5px; */
+}
+.itemMenu:hover, .itemSub:hover{
+color: #fff;
+background-color: #00abf0;
+}
+.mat-button.mat-accent .mat-button-focus-overlay{
+background-color: rgba(255, 64, 129, .12)
+}
+.mat-button:hover .mat-button-focus-overlay{
+background-color: rgba(255, 64, 129, .12);
+}
+/* Underline From Center */
+.hvr-underline-from-center {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+position: relative;
+overflow: hidden;
+}
+.hvr-underline-from-center:before {
+content: "";
+position: absolute;
+z-index: -1;
+left: 51%;
+right: 51%;
+bottom: 0;
+background: #00abf0;
+height: 4px;
+-webkit-transition-property: left, right;
+transition-property: left, right;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+left: 0;
+right: 0;
+}
+.fBtn{
+z-index: 1050;
+border: 1px solid #eee;
+height: 45px;
+box-shadow: inset 0px -2px 0px 0px #0a0a0a61;
+}
+.btnMn{
+z-index: 1050;
+border-right: 1px solid #eee;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+height: 46px;
+box-shadow: inset 0px -2px 0px 0px #0a0a0a61;
+}
+.spanMenu{
+padding: 12px;
+top: 4px;
+position: relative;
+}
+.mat-drawer-content{
+background: #fff;
+}
+mat-button{
+border-radius: 3px;
+}
+.mat-sidenav{
+width: 100%;
+box-shadow: none;
+visibility: hidden;
+}
+.mat-nav-list .mat-list-item {
+cursor: pointer;
+/* outline: #ccc9c9 auto 1px; */
+}
+.mat-list-base {
+padding-top: 0 !important;
+}
+.cerrarmb{
+position: relative;
+right: 59%;
+bottom: 27px;
+color: #fff;
+font-size: 46px;
+}
+.closeDiv{
+border-bottom: 1px solid #bdbbbb !important;
+}
+.closeDivSup{
+background-color: #083e94;
+}
+.mat-list-item{
+border-bottom: 1px solid #bdbbbb;
+color: #083e94;
+font-weight: 500;
+}
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+display: block;
+height: 40px;
+-webkit-tap-highlight-color: transparent;
+width: 100%;
+padding: 0;
+font-size: 14px;
+}
+.mat-tree-node {
+min-height: 40px;
+border-bottom: 1px solid #bdbbbb;
+color: #083e94;
+font-weight: 500;
+}
+::ng-deep .buttonSide  {
+left: 87%;
+position: relative;
+color: #083e94;
+font-weight: bold;
+}
+ul{
+white-space: nowrap;
+list-style:none inside;
+padding: 12px;
+margin: 0;
+background:#fff;
+}
+li{
+display: inline;
+background: #fff;
+color: #083e94;
+padding-left: 1%;
+}
+.menuSide{
+  position: relative;
+  right: 8px;
+}
+.y{
+font-weight: initial;
+}
+.titleMb{
+color: #fff;
+position: relative;
+left: 62px;
+font-size: 20px;
+font-weight: 400;
+}
+.titleMb2{
+color: #083e94;
+position: relative;
+font-size: 20px;
+font-weight: inherit;
+bottom: 8px;
+left: 36%;
+}
+@media (max-width:479px) {
+mat-toolbar{
+height: 40px;
+}
+}

@@ -1,0 +1,185 @@
+<div style="overflow: hidden;">
+  <div class="box" fxShow="true" fxHide.lt-md="true">
+    <div class="one">
+      <h1 class="logo">
+        <a (click)="navigate(1)">
+          <img class="logo" src="assets/logoSound.png">
+        </a>
+      </h1>
+    </div>
+    <div class="two">
+      <span class="material-icons place">
+        place
+      </span>
+      <strong class="address">Dirección</strong>
+      <span class="addressNumber">Carrera 38 No. 10-25, Local 203, Centro Comercial Bahía</span>
+    </div>
+    <div class="three">
+      <span>
+        <a href="https://api.whatsapp.com/send?phone=573134471458"
+          target="_blank"><img class="whatsapp" src="assets/whatsapp.png"></a>
+      </span>
+      <strong class="whatsappTitle">Whatsapp</strong>
+      <span class="whatsappNumber">+57 320 654 09 00</span>
+    </div>
+
+  </div>
+  <mat-toolbar>
+    <div fxShow="true" fxHide.gt-sm="true">
+      <!-- <span (click)="sidenav.toggle()">
+        <mat-icon class="menu">menu</mat-icon>
+      </span> -->
+      <a (click)="sidenav.toggle()" class="closeDiv" mat-list-item>
+        <span class="titleMb2">SOUNDPRO-ONLINE</span><mat-icon class="menu">menu</mat-icon>
+      </a>
+    </div>
+    <div fxFlex fxShow="true" fxHide.lt-md="true">
+      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+
+      <a class="itemMenu hvr-underline-from-center fBtn" mat-button (click)="navigate(1)"><span
+          class="spanMenu">INICIO</span></a>
+
+      <a class="itemMenu hvr-underline-from-center btnMn" mat-button #btnLinea mat-button
+        [matMenuTriggerFor]="lineaMenu" #levelOneTriggerLine="matMenuTrigger"
+        (mouseenter)="buttonEnter(levelOneTriggerLine)" (mouseleave)="buttonLeave(levelOneTriggerLine, btnLinea)"><span
+          class="spanMenu">LINEA DJ</span> </a>
+      <mat-menu #lineaMenu="matMenu" class="mat-menu-panel">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(levelOneTriggerLine, btnLinea)">
+          <ul class="subMenu">
+            <a class="itemSub hvr-underline-from-center" mat-button (click)="navigate(2)">Pioneer</a>
+            <a class="itemSub hvr-underline-from-center" mat-button (click)="navigate(3)">Traktor</a>
+            <a class="itemSub hvr-underline-from-center" mat-button (click)="navigate(4)">Denon Dj</a>
+          </ul>
+        </span>
+      </mat-menu>
+      <a class="itemMenu hvr-underline-from-center btnMn" #btnSonido mat-button [matMenuTriggerFor]="sonidoMenu"
+        #levelOneTriggerSound="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTriggerSound)"
+        (mouseleave)="buttonLeave(levelOneTriggerSound, btnSonido)"><span class="spanMenu">CABINAS</span> </a>
+      <mat-menu #sonidoMenu="matMenu" class="mat-menu-panel">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(levelOneTriggerSound, btnSonido)">
+          <ul class="subMenu">
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Jbl</a>
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Fbt</a>
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Electrovoice</a>
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Qsc</a>
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Rcf</a>
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Yorkville</a>
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Db technology</a>
+
+          </ul>
+        </span>
+      </mat-menu>
+
+      <a class="itemMenu hvr-underline-from-center btnMn" #btnMicro mat-button [matMenuTriggerFor]="microMenu"
+        #levelOneTriggerMicro="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTriggerMicro)"
+        (mouseleave)="buttonLeave(levelOneTriggerMicro, btnMicro)"><span class="spanMenu">MICROFONOS</span> </a>
+      <mat-menu #microMenu="matMenu" class="mat-menu-panel micro">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(levelOneTriggerMicro, btnMicro)">
+          <ul class="subMenu">
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Sennheiser</a>
+
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Shure</a>
+
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Akg</a>
+
+          </ul>
+        </span>
+      </mat-menu>
+
+      <a class="itemMenu hvr-underline-from-center btnMn" #btnAudifono mat-button [matMenuTriggerFor]="audifonoMenu"
+        #levelOneTriggerAud="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTriggerAud)"
+        (mouseleave)="buttonLeave(levelOneTriggerAud, btnAudifono)"><span class="spanMenu">AUDIFONOS</span> </a>
+      <mat-menu #audifonoMenu="matMenu" class="mat-menu-panel line">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(levelOneTriggerAud, btnAudifono)">
+          <ul class="subMenu">
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Pioneer</a>
+
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Akg</a>
+
+          </ul>
+        </span>
+      </mat-menu>
+
+      <a class="itemMenu hvr-underline-from-center btnMn" #btnLuces mat-button [matMenuTriggerFor]="lucesMenu"
+        #levelOneTriggerLuces="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTriggerLuces)"
+        (mouseleave)="buttonLeave(levelOneTriggerLuces,btnLuces)"><span class="spanMenu">LUCES</span> </a>
+      <mat-menu #lucesMenu="matMenu" class="mat-menu-panel line">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(levelOneTriggerLuces,btnLuces)">
+          <ul class="subMenu">
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Shauvet</a>
+
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Big dipper</a>
+
+          </ul>
+        </span>
+      </mat-menu>
+
+      <a class="itemMenu hvr-underline-from-center btnMn" #btnEstudio mat-button [matMenuTriggerFor]="estudioMenu"
+        #levelOneTriggerStudent="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTriggerStudent)"
+        (mouseleave)="buttonLeave(levelOneTriggerStudent,btnEstudio)"><span class="spanMenu">ESTUDIO
+          GRABACIÓN</span></a>
+      <mat-menu #estudioMenu="matMenu" class="mat-menu-panel last">
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(levelOneTriggerStudent,btnEstudio)">
+          <ul class="subMenu">
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Interfaz de audio</a>
+
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Monitores de estudio</a>
+
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Microfonos de condensador</a>
+
+
+            <a class="itemSub hvr-underline-from-center" (click)="navigate(2)" mat-button>Otros</a>
+
+          </ul>
+        </span>
+      </mat-menu>
+      <a class="itemMenu hvr-underline-from-center btnMn" mat-button (click)="navigate(23)"><span
+          class="spanMenu">CONTACTO</span></a>
+
+    </div>
+  </mat-toolbar>
+  <mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav #sidenav fxLayout="column" mode="over" position="start" fixedInViewport="true" disableClose="true">
+      <mat-nav-list dense>
+        <a (click)="sidenav.toggle()" class="closeDiv closeDivSup" mat-list-item>
+          <span class="titleMb">SOUNDPRO-ONLINE</span><mat-icon class="cerrarmb">minimize</mat-icon>
+        </a>
+        <a (click)="navigateMobile({url:'/home'})" mat-list-item>INICIO</a>
+        <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+          <mat-tree-node (click)="navigateMobile(node)" *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+            <a *ngIf="node.level==0" class="buttonSide"  matTreeNodeToggle
+              [attr.aria-label]="'toggle ' + node.name">
+              <mat-icon class="mat-icon" rtl-mirror>
+                {{treeControl.isExpanded(node) ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}
+              </mat-icon>
+            </a>
+            <span [ngClass]="node.level==0?'menuSide':'menuSide y'">{{node.name}}</span>
+          </mat-tree-node>
+        </mat-tree>
+        <a (click)="navigateMobile({url:'/home'})" class="closeDiv" mat-list-item>
+          CONTACTO
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

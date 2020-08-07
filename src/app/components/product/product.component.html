@@ -1,0 +1,99 @@
+<div class='container-fluid'>
+    <div class="container products">
+        <img src="{{this.imgTitle}}" class="imgTitle" alt="">
+        <h4>{{this.title}}</h4>
+        <mat-divider></mat-divider>
+        <br />
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-4 img-hover-zoom" *ngIf="div1">
+                <img src="{{this.imgProd1}}" alt="" class="imgProd">
+                <p class="textProd">{{this.titleProd1}}</p>
+                <p class="textDescription">{{this.textProd1A}}</p>
+                <p><span *ngIf="!product1">Más </span><span *ngIf="product1">Menos </span>información <span
+                        class="material-icons masInfo" (click)="product1=true" *ngIf="!product1">add</span><span
+                        class="material-icons masInfo" (click)="product1=false" *ngIf="product1">remove</span></p>
+                <p class="textDescription" *ngIf="product1" [@inOutAnimation]>{{this.textProd1B}}</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 img-hover-zoom" *ngIf="div2">
+                <img src="{{this.imgProd2}}" alt="" class="imgProd">
+                <p class="textProd">{{this.titleProd2}}</p>
+                <p class="textDescription">{{this.textProd2A}}</p>
+                <p><span *ngIf="!product2">Más </span><span *ngIf="product2">Menos </span>información <span
+                        class="material-icons masInfo" (click)="product2=true" *ngIf="!product2">add</span><span
+                        class="material-icons masInfo" (click)="product2=false" *ngIf="product2">remove</span></p>
+                <p class="textDescription" *ngIf="product2" [@inOutAnimation]>{{this.textProd2B}}</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 img-hover-zoom" *ngIf="div3">
+                <img src="{{this.imgProd3}}" alt="" class="imgProd">
+                <p class="textProd">{{this.titleProd3}}</p>
+                <p class="textDescription">{{this.textProd3A}}</p>
+                <p><span *ngIf="!product3">Más </span><span *ngIf="product3">Menos </span>información <span
+                        class="material-icons masInfo" (click)="product3=true" *ngIf="!product3">add</span><span
+                        class="material-icons masInfo" (click)="product3=false" *ngIf="product3">remove</span></p>
+                <p class="textDescription" *ngIf="product3" [@inOutAnimation]>{{this.textProd3B}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-4 img-hover-zoom" *ngIf="div4">
+                <img src="{{this.imgProd4}}" alt="" class="imgProd">
+                <p class="textProd">{{this.titleProd4}}</p>
+                <p class="textDescription">{{this.textProd4A}}</p>
+                <p><span *ngIf="!product4">Más </span><span *ngIf="product4">Menos </span>información <span
+                        class="material-icons masInfo" (click)="product4=true" *ngIf="!product4">add</span><span
+                        class="material-icons masInfo" (click)="product4=false" *ngIf="product4">remove</span></p>
+                <p class="textDescription" *ngIf="product4" [@inOutAnimation]>{{this.textProd4B}}</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 img-hover-zoom" *ngIf="div5">
+                <img src="{{this.imgProd5}}" alt="" class="imgProd">
+                <p class="textProd">{{this.titleProd5}}</p>
+                <p class="textDescription">{{this.textProd5A}}</p>
+                <p><span *ngIf="!product5">Más </span><span *ngIf="product5">Menos </span>información <span
+                        class="material-icons masInfo" (click)="product5=true" *ngIf="!product5">add</span><span
+                        class="material-icons masInfo" (click)="product5=false" *ngIf="product5">remove</span></p>
+                <p class="textDescription" *ngIf="product5" [@inOutAnimation]>{{this.textProd5B}}</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 img-hover-zoom" *ngIf="div6">
+                <img src="{{this.imgProd6}}" alt="" class="imgProd">
+                <p class="textProd">{{this.titleProd6}}</p>
+                <p class="textDescription">{{this.textProd6A}}</p>
+                <p><span *ngIf="!product6">Más </span><span *ngIf="product6">Menos </span>información <span
+                        class="material-icons masInfo" (click)="product6=true" *ngIf="!product6">add</span><span
+                        class="material-icons masInfo" (click)="product6=false" *ngIf="product6">remove</span></p>
+                <p class="textDescription" *ngIf="product6" [@inOutAnimation]>{{this.textProd6A}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-4 img-hover-zoom" *ngIf="div7">
+                <img src="{{this.imgProd7}}" alt="" class="imgProd">
+                <p class="textProd">{{this.titleProd7}}</p>
+                <p class="textDescription">{{this.textProd7A}}</p>
+                <p><span *ngIf="!product7">Más </span><span *ngIf="product7">Menos </span>información <span
+                        class="material-icons masInfo" (click)="product7=true" *ngIf="!product7">add</span><span
+                        class="material-icons masInfo" (click)="product7=false" *ngIf="product7">remove</span></p>
+                <p class="textDescription" *ngIf="product7" [@inOutAnimation]>{{this.textProd7B}}</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 img-hover-zoom" *ngIf="div8">
+                <img src="{{this.imgProd8}}" alt="" class="imgProd">
+                <p class="textProd">{{this.titleProd8}}</p>
+                <p class="textDescription">{{this.textProd8A}}</p>
+                <p><span *ngIf="!product8">Más </span><span *ngIf="product8">Menos </span>información <span
+                        class="material-icons masInfo" (click)="product8=true" *ngIf="!product8">add</span><span
+                        class="material-icons masInfo" (click)="product8=false" *ngIf="product8">remove</span></p>
+                <p class="textDescription" *ngIf="product8" [@inOutAnimation]>{{this.textProd8B}}</p>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 img-hover-zoom" *ngIf="div9">
+                <img src="{{this.imgProd9}}" alt="" class="imgProd">
+                <p class="textProd">{{this.titleProd9}}</p>
+                <p class="textDescription">{{this.textProd9A}}</p>
+                <p><span *ngIf="!product9">Más </span><span *ngIf="product9">Menos </span>información <span
+                        class="material-icons masInfo" (click)="product9=true" *ngIf="!product9">add</span><span
+                        class="material-icons masInfo" (click)="product9=false" *ngIf="product9">remove</span></p>
+                <p class="textDescription" *ngIf="product9" [@inOutAnimation]>{{this.textProd9B}}</p>
+            </div>
+        </div>
+        <span id="arrow" class="init material-icons" (click)="goInit()">
+            keyboard_arrow_up
+        </span>
+    </div>
+
+</div>
